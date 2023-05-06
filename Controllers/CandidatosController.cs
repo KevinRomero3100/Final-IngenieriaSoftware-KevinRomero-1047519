@@ -162,12 +162,10 @@ namespace Final_IngenieriaSoftware.Controllers
         }
 
 
-        [HttpPost, ActionName("Cerrar")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CerrarInscriopciones(int estado)
+        public async Task<IActionResult> CerrarCandidatos()
         {
             StateApp change = new StateApp();
-            change.State = true;
+            change.State = false;
             change.IdstateApp = 1;
             _context.Update(change);
             await _context.SaveChangesAsync();
@@ -175,6 +173,8 @@ namespace Final_IngenieriaSoftware.Controllers
             return RedirectToAction(nameof(Index));
 
         }
+
+
         private bool CandidatoExists(int id)
         {
           return (_context.Candidatos?.Any(e => e.Idcandidatos == id)).GetValueOrDefault();

@@ -77,12 +77,10 @@ namespace Final_IngenieriaSoftware.Controllers
             return BadRequest();
         }
 
-        [HttpPost, ActionName("Cerrar")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CerrarVotacion(int estado)
+        public async Task<IActionResult> CerrarVotaciones()
         {
-           StateApp change = new StateApp();
-            change.State = false;
+            StateApp change = new StateApp();
+            change.State = true;
             change.IdstateApp= 1;
                     _context.Update(change);
                     await _context.SaveChangesAsync();
