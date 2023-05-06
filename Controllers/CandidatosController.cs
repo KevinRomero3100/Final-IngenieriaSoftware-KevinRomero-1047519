@@ -162,7 +162,7 @@ namespace Final_IngenieriaSoftware.Controllers
         }
 
 
-        [HttpPost]
+        [HttpPost, ActionName("Cerrar")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CerrarInscriopciones(int estado)
         {
