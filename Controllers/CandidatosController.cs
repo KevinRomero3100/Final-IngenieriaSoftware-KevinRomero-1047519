@@ -161,6 +161,20 @@ namespace Final_IngenieriaSoftware.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CerrarInscriopciones(int estado)
+        {
+            StateApp change = new StateApp();
+            change.State = true;
+            change.IdstateApp = 1;
+            _context.Update(change);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+
+        }
         private bool CandidatoExists(int id)
         {
           return (_context.Candidatos?.Any(e => e.Idcandidatos == id)).GetValueOrDefault();

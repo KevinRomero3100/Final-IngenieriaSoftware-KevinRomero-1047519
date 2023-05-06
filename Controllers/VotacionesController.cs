@@ -77,6 +77,20 @@ namespace Final_IngenieriaSoftware.Controllers
             return BadRequest();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CerrarVotacion(int estado)
+        {
+           StateApp change = new StateApp();
+            change.State = false;
+            change.IdstateApp= 1;
+                    _context.Update(change);
+                    await _context.SaveChangesAsync();
+              
+                return RedirectToAction(nameof(Index));
+
+        }
+
         private bool VotacioneExists(int id)
         {
           return (_context.Votaciones?.Any(e => e.IdnewTable == id)).GetValueOrDefault();
