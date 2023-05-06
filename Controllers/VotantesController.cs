@@ -59,8 +59,8 @@ namespace Final_IngenieriaSoftware.Controllers
         public async Task<IActionResult> Create([Bind("Idvotante,Dpi,Nombre,RolIdRol")] Votante votante)
         {
             var state = _context.StateApps;
-            var validate = state.FirstOrDefault(x => x.State.Equals(1));
-            if (validate != null)
+            var validate = state.FirstOrDefault(x => x.IdstateApp.Equals(1));
+            if (!(bool)validate.State)
             {
                 if (ModelState.IsValid)
                 {

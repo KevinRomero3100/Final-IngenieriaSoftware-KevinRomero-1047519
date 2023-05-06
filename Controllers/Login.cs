@@ -29,7 +29,7 @@ namespace Final_IngenieriaSoftware.Controllers
                 bool response = await ValidateUser(_dpi);
                 if (response)
                 {
-                    return RedirectToAction("Index", "Login");
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {
@@ -38,7 +38,7 @@ namespace Final_IngenieriaSoftware.Controllers
             }
             ViewData["RolIdRol"] = _dpi;
             // Si llegamos hasta aquí, algo falló, vuelve a mostrar la vista de inicio de sesión con el modelo actualizado
-            return View();
+            return View("Index");
         }
 
         private async Task<bool> ValidateUser(string _dpi)
@@ -46,7 +46,7 @@ namespace Final_IngenieriaSoftware.Controllers
             var votantes = _context.Votantes.Include(v => v.RolIdRolNavigation);
             if (votantes != null)
             {
-                var votante = votantes.FirstOrDefault(x => x.Dpi.Equals(_dpi));
+                var votante = votantes.FirstOrDefault(x => x.Dpi.ToString().Equals(_dpi));
                 if (votante != null)
                 {
                     SingeltonUsuario.Instance.votante = votante;

@@ -1,0 +1,30 @@
+﻿@model Final_IngenieriaSoftware.Models.Votacione
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Votacione</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CandidatosIdcandidatosNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CandidatosIdcandidatosNavigation.Idcandidatos)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.VotanteIdvotanteNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.VotanteIdvotanteNavigation.Idvotante)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdnewTable">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

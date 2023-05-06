@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Final_IngenieriaSoftware.Models;
+using System.Net;
 
 namespace Final_IngenieriaSoftware.Controllers
 {
@@ -58,8 +59,8 @@ namespace Final_IngenieriaSoftware.Controllers
         public async Task<IActionResult> Create([Bind("Idcandidatos,Nombre,Partido,Afiliados")] Candidato candidato)
         {
             var state = _context.StateApps;
-            var validate = state.FirstOrDefault(x => x.State.Equals(0));
-            if (validate != null)
+            var validate = state.FirstOrDefault(x => x.IdstateApp.Equals(1));
+            if ((bool)validate.State)
             {
                 if (ModelState.IsValid)
                 {
@@ -68,7 +69,8 @@ namespace Final_IngenieriaSoftware.Controllers
                     return RedirectToAction(nameof(Index));
                 }
             }
-            return View(candidato);
+            var response = new HttpResponseMessage(HttpStatusCode.BadRequest);
+            return BadRequest();
         }
 
         // GET: Candidatos/Edit/5

@@ -56,6 +56,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Usuario/Desktop/Final-IngenieriaSoftware/Final-IngenieriaSoftware/Views/Votaciones/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm90YWNpb25lc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Desktop/Final-IngenieriaSoftware/Final-IngenieriaSoftware/Views/Votaciones/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm90YWNpb25lc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Desktop/Final-IngenieriaSoftware/Final-IngenieriaSoftware/Views/Votaciones/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm90YWNpb25lc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Desktop/Final-IngenieriaSoftware/Final-IngenieriaSoftware/Views/Votaciones/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm90YWNpb25lc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Desktop/Final-IngenieriaSoftware/Final-IngenieriaSoftware/Views/Votaciones/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm90YWNpb25lc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Usuario/Desktop/Final-IngenieriaSoftware/Final-IngenieriaSoftware/Views/Votantes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm90YW50ZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
