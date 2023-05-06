@@ -1,0 +1,7 @@
+C:\Users\Usuario\Desktop\Final-IngenieriaSoftware\Final-IngenieriaSoftware\obj\Docker\publish\Final-IngenieriaSoftware.exe
+C:\Users\Usuario\Desktop\Final-IngenieriaSoftware\Final-IngenieriaSoftware\obj\Docker\publish\appsettings.Development.json
+C:\Users\Usuario\Desktop\Final-IngenieriaSoftware\Final-IngenieriaSoftware\obj\Docker\publish\appsettings.json
+C:\Users\Usuario\Desktop\Final-IngenieriaSoftware\Final-IngenieriaSoftware\obj\Docker\publish\Final-IngenieriaSoftware.dll
+C:\Users\Usuario\Desktop\Final-IngenieriaSoftware\Final-IngenieriaSoftware\obj\Docker\publish\Final-IngenieriaSoftware.deps.json
+C:\Users\Usuario\Desktop\Final-IngenieriaSoftware\Final-IngenieriaSoftware\obj\Docker\publish\Final-IngenieriaSoftware.runtimeconfig.json
+C:\Users\Usuario\Desktop\Final-IngenieriaSoftware\Final-IngenieriaSoftware\obj\Docker\publish\Final-IngenieriaSoftware.pdb
